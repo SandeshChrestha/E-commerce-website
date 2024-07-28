@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aashraya's CV</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        body 
+        {
+            background:rgba(95, 158, 160, 0.565);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .cvcontainer{
+            position: relative;
+            width: 100%;
+            max-width: 1000px;
+            min-height: 1000px;
+            background: rgb(255, 255, 255);
+            margin: 50px;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+        }
+        .cvcontainer .left_area{
+            position: relative;
+            background: rgba(0, 0, 0, 0.27);
+            padding: 40px;
+        }
+        .profiletxt{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        }
+        .profiletxt .imgbox{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border-radius: 1    0%;
+            overflow: hidden;
+        }
+        .profiletxt.imgbox img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .profiletxt h2{
+            color: rgb(0, 0, 0);
+            font-size: 1.5em;
+            margin-top: 20px;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 600;
+            line-height: 1.4em;
+        }
+        .profiletxt h2 span{
+            font-size: 0.8em;
+            font-weight: 300;
+            
+        }
+        .contactInfo{
+            padding-top: 40px;
+        }
+        .title{
+            color: rgb(0, 0, 0);
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+        .contactInfo ul{
+            position: relative;
+            font-size: 18px;
+        }
+        .contactInfo ul li{
+            position: relative;
+            list-style: circle;
+            color: rgb(0, 0, 0);
+            margin: 10px 0;
+            cursor: pointer;
+        }
+        .contactInfo ul li span{
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+        }
+        .contactInfo.Education li{
+            margin-bottom: 15px;
+            
+        }
+        .contactInfo.Education h5{
+            color: rgb(0, 0, 0);
+            font-weight: 500;
+            font-size: 25px;
+        }
+        .contactInfo.Education h4{
+            color: rgb(0, 0, 0);
+            font-weight: 500;
+            
+        }
+        .cvcontainer.right_area{
+            position: relative;
+            background-color: white;
+            
+        }
+        .about{
+            margin-bottom: 50px;
+            font-size: 20px;
+        }
+        .about:last-child{
+            margin-bottom: 0;
+        }
+        .title2{
+            color: rgb(0, 0, 0);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            
+        }
+        p{
+            color: #000000;
+        }
+        .skills .box{
+            position: relative;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+        }
+        .skills .box h4{
+            text-transform: uppercase;
+            color: #000000;
+            font-weight: 500;
+            margin: 15px;
+
+        }
+        .skills .box .percent{
+            position: relative;
+            width: 90%;
+            height: 10px;
+            background-color: #0000006e;
+
+        }
+        .skills .box .percent div{
+        
+        top: 0;
+        letter-spacing: 0;
+        height: 100%;
+        background: #03a9f4 ;
+        
+        }
+        .interest ul{
+            display: flex;
+            grid-template-columns: repeat(4,1fr);
+            margin-left: 10px;
+        }
+        .interest ul li{
+            list-style-type: circle;
+            color: rgb(0, 0, 0);
+            font-weight: 500;
+            margin-top: 20px;
+            font-size: 20px;
+            margin-left: 40px;
+        }
+nav{
+    text-align: right;
+    margin-right: 20px;
+}
+.nab{
+    color: #000000;
+    font-size: 20px;
+}
+.nab:hover{
+color: #ff523b;
+}
+       
+        </style>
+</head>
+
+<body>
+   
+    <div class="cvcontainer">
+        <div class="left_area">
+            <div class="profiletxt">
+                <div class="imgbox">
+                    <img src="Me.png" height="200px" width="350px" style="padding-right: 150px;">
+                </div>
+                <h2>Aashraya Shrestha <br><span>Student</span></h2>
+            </div>
+
+            <div class="contactInfo">
+                <h3 class="title">Contact Information</h3>
+                <ul>
+                    <li>
+                        <span class="text">9863355303</span>
+                    </li>
+                    <li>
+                        <span class="text">aashraya8@gmail.com</span>
+                    </li>
+                
+                    <li>
+                        <span class="text">Jawalakhel,Lalitpur</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="contactInfo Education">
+                <h3 class="title">Education</h3>
+                <ul>
+                    <li>
+                        <h5>2023-present</h5>
+                        <h4><b>1st year Bachelors in Computing:</b></h4>
+                        <h4>Islington College</h4>
+                    </li>
+                    <li>
+                        <h5>2020-2022</h5>
+                        <h4><b>High School Degree:</b></h4>
+                        <h4>GIHE(Gems Institue Of Higher Education)</h4>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="right_area" style="margin-left: 30px;margin-top: 20px;">
+            <nav>
+                <a href="/AboutUs/AboutUs.html" class="nab" style="text-decoration: none;">← Back to AboutUs</a>
+            </nav>
+            <div class="about">
+                <h2 class="title2" style="text-align: center; margin-top: 30px;">Profile</h2>
+                <p style="margin-top: 30px;">A narcissistic character with a disciplined mindset who is always eager to learn and gain new skills.
+                   Socially active and open-minded person and capable of adapting to any environment that surrounds me. 
+                </p>
+            </div>
+
+            <div class="about">
+                <h2 class="title2">Experience</h2>
+                <a>- Own a small online store</a><br>
+                <a>- IIMUN and PACEM</a><br>
+                <a>- Won a street photography Competition</a>
+            </div>
+            <br>
+            <br>
+
+            <div class="about skills">
+                <h2 class="title2">Skills</h2>
+                <div class="box">
+                    <h4>HTML</h4>
+                    <div class="percent" style="margin-left: 10px;">
+                    <div style="width: 100%;"></div>
+                    </div>
+                    </div>
+                <div class="box">
+                    <h4>Fluent English</h4>
+                    <div class="percent" style="margin-left: 10px;">
+                        <div style="width: 95%;"></div>
+                    </div>
+                    </div>
+                <div class="box">
+                     <h4>Disciplined and Hardworking</h4>
+                     <div class="percent" style="margin-left: 10px;">
+                        <div style="width: 100%;"></div>
+                     </div>
+                     </div>
+                <div class="box">
+                    <h4>Interpersonal Skill</h4>
+                    <div class="percent" style="margin-left: 10px;margin-top: 10px;">
+                        <div style="width: 100%;"></div>
+                    </div>
+                    </div>
+                        
+                </div>
+                <div class="about interest">
+                <h2 class="title2">Interests</h2>
+                <ul>
+                    <li>Photography</li>
+                    <li>Music</li>
+                    <li>Gym</li>
+                    <li>Photo & Video Editing</li>
+                </ul>
+
+                </div>
+            </div>
+    </div>
+</body>
+</html>

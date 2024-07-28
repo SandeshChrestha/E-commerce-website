@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="In products page, we’ve created categories of products available on our store such as camera body, lens, and its accessories and even drones. You can click any category and you will be redirected to a page showing list of products you can buy ranging from price to price.">
+    <meta name="keywords" content="Camera Body, Lens, Tripods, Drones, Speedlight">
+    <meta name="author" content="Team-5: Sanskar Karki, Aashraya Shrestha, Sandesh Shrestha, Yug Tamang, Rahul Jaiswal">
+    <title>Products</title>
+    <link rel="stylesheet" type="text/css" href="/css/main.css"><!--linking the main css-->
+    <style>
+
+        .header{
+            margin-top: -100px;
+        }
+        /* internal css starts */
+        h1{    /* designing the main header */
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 70px;
+            color:#000000;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+  /* individual css is used for the titles of the products */
+        h2 a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            
+        }
+        h3 a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            
+        }
+
+        h4 a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            
+        }
+        h5 a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            
+        }
+
+        h6 a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+  /*product list ends */
+        nav a{            /* designing the text within the nav bar */
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            margin-bottom: -10px;
+        }
+        nav{   /* aligning thenav bar to the center*/
+            text-align: center;
+            margin-left:7%;
+           margin-top: -150px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="header" style="display: flex;">
+        
+        <a href="/index.html">
+            <img  href= "/index.html" src="/images1/logo5.png" style="width: 400px;height: 350px; padding-bottom: 30px;padding-left: 80px;" alt="logo"> <!--logo is arranged at the top left-->
+            </a>
+            <h1 align="center" style="font-size: 60px;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; left: 50%;padding-top: 50px;padding-left: 4%;">Products Available</h1>
+        </div>
+
+    <nav>  <!--Creating a section for nav bar-->
+        <ul><!--the contents within the nav bar is created along with javascript-->
+            <li><a href="/index.html" onmouseover="changeColor(this)" onmouseleave="restoreColor(this)">Home</a></li>
+            <li><a href="/html/blog.html" onmouseover="changeColor(this)" onmouseleave="restoreColor(this)">Blog</a></li>
+            <li><a href="researchpage.html" onmouseover="changeColor(this)" onmouseleave="restoreColor(this)">Research</a></li>
+            <li><a href="/AboutUs/AboutUs.html" onmouseover="changeColor(this)" onmouseleave="restoreColor(this)">About Us</a></li>
+    
+    
+        </ul>
+     </nav>
+  <!-- each title of the product is written down with pages linked to it -->
+<h2 align="center" class="p1">
+    <a href="/html/lens.html">LENS</a>
+</h2>
+
+<h3 align="center" class="p2">
+    <a href="/html/tripods.html">TRIPOD</a>
+</h3>
+<h4 align="center" class="p3">
+    <a href="/html/speedlight.html">SPEEDLIGHT</a><br>
+</h4>
+<h5 align="center" class="p4">
+    <a href="/html/camera.html" >BODY</a><br>
+</h5>
+
+<h6 align="center" class="p5">
+    <a href="/html/drones.html">DRONES</a>
+</h6>
+
+</body>
+<script>// using internal js to use hover effect
+    function changeColor(element){
+        element.style.color="#ff523b";
+    }
+    function restoreColor(element) {
+        element.style.color = "black";
+    }
+</script>
+<footer align="center">
+    <a>@TheCameraCrafter</a><!--copyright-->
+</footer><!--adding a footer for the page-->
+<div class="socialmedia" style="text-align:center;margin-top: 20px;"><!--icons for social media is created and those websites are linked to it-->
+    
+    <a href="https://www.instagram.com/">
+        <img src="/images1/Instagram_icon.png.webp" style="width: 32px;height: 32px;">
+    </a>
+    <a href="https://www.facebook.com/">
+        <img src="/images1/facebookicon.webp" style="width: 40px;height: 37px;">
+    </a>
+    <a href="https://www.whatsapp.com/">
+        <img src="/images1/whatsappicon.webp" style="width: 40px;height: 37px;">
+    </a>
+</div>
+
+<div class="contact" style="text-align: center;margin-top: 10px;"><!--contact information-->
+    <a>Contact: 01-5578864 or +977-9863826483</a>
+</div>
+
+</html>

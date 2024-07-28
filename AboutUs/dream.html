@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanskar's CV</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        body 
+        {
+            background: lightgreen;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .cvcontainer{
+            position: relative;
+            width: 100%;
+            max-width: 1000px;
+            min-height: 1000px;
+            background: white;
+            margin: 50px;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+        }
+        .cvcontainer .left_area{
+            position: relative;
+            background: rgb(255, 107, 107);
+            padding: 40px;
+        }
+        .profiletxt{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+        }
+        .profiletxt .imgbox{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border-radius: 1    0%;
+            overflow: hidden;
+        }
+        .profiletxt.imgbox img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .profiletxt h2{
+            color: white;
+            font-size: 1.5em;
+            margin-top: 20px;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 600;
+            line-height: 1.4em;
+        }
+        .profiletxt h2 span{
+            font-size: 0.8em;
+            font-weight: 300;
+            
+        }
+        .contactInfo{
+            padding-top: 40px;
+        }
+        .title{
+            color: white;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+        .contactInfo ul{
+            position: relative;
+            font-size: 18px;
+        }
+        .contactInfo ul li{
+            position: relative;
+            list-style: circle;
+            color: white;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+        .contactInfo ul li span{
+            color: white;
+            font-weight: 300;
+        }
+        .contactInfo.Education li{
+            margin-bottom: 15px;
+            
+        }
+        .contactInfo.Education h5{
+            color: rgb(255, 237, 79);
+            font-weight: 500;
+            font-size: 17px;
+        }
+        .contactInfo.Education h4{
+            color: white;
+            font-weight: 500;
+            
+        }
+        .cvcontainer.right_area{
+            position: relative;
+            background-color: white;
+            padding: 40px;
+        }
+        .about{
+            margin-bottom: 50px;
+            font-size: 20px;
+        }
+        .about:last-child{
+            margin-bottom: 0;
+        }
+        .title2{
+            color: rgb(255, 107, 107);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+        p{
+            color: #333;
+        }
+        .skills .box{
+            position: relative;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            justify-content: center;
+            align-items: center;
+        }
+        .skills .box h4{
+            text-transform: uppercase;
+            color: #848c99;
+            font-weight: 500;
+            margin: 15px;
+
+        }
+        .skills .box .percent{
+            position: relative;
+            width: 100%;
+            height: 10px;
+            background-color: #f0f0f0;
+
+        }
+        .skills .box .percent div{
+        position: absolute;
+        top: 0;
+        letter-spacing: 0;
+        height: 100%;
+        background: #03a9f4 ;
+        }
+        .interest ul{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            margin-left: 30px;
+        }
+        .interest ul li{
+            list-style-type: circle;
+            color: rgb(12, 186, 23);
+            font-weight: 500;
+            margin: 10px 0;
+            font-size: 20px;
+        }
+        .backbtn{
+            position: relative;
+            background-color: rgb(0, 255, 183);
+            border-radius: 20px;
+            border-style: none;
+            box-sizing: border-box;
+            color: rgb(78, 8, 229);
+            cursor: pointer;
+            display: inline-block;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 40px;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 20px;
+            margin: 0;
+            outline: none;
+            text-align: center;
+            text-decoration: none;
+            transition: 0.4s;
+            padding: 10px 16px;
+            }
+            .backbtn:hover{
+                background-color: rgb(179, 255, 0);
+                color: rgb(208, 0, 255);
+            }
+       
+
+        
+        </style>
+</head>
+<body>
+    <div class="cvcontainer">
+        <div class="left_area">
+            <div class="profiletxt">
+                <div class="imgbox">
+                    <img src="dream.png" height="200px" width="200px">
+                </div>
+                <h2>Sanskar Karki<br><span>Student</span></h2>
+            </div>
+
+            <div class="contactInfo">
+                <h3 class="title">Contact Information</h3>
+                <ul>
+                    <li>
+                        <span class="text">9808002767</span>
+                    </li>
+                    <li>
+                        <span class="text">sanskarkarki29@gmail.com</span>
+                    </li>
+                    <li> 
+                        <a style="text-decoration: none; font-size: 25px;" href="https://www.instagram.com/__dreamxd__/" class="insta"><span class="text"><strong>__dreamxd__</strong></span></a>
+                    </li>
+                    <li>
+                        <span class="text">Suryabinayak, Bhaktapur</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="contactInfo Education">
+                <h3 class="title">Education</h3>
+                <ul>
+                    <li>
+                        <h5>2023-present</h5>
+                        <h4><strong>Bachelor's in Computing</strong></h4>
+                        <h4>Islington College</h4>
+                    </li>
+                    <li>
+                        <h5>2020-2022</h5>
+                        <h4><strong>High School Degree</strong></h4>
+                        <h4>Kathmandu World School</h4>
+                    </li>
+                </ul>
+                <br>
+                <br>
+                <br>
+                <br>
+                <a href="AboutUs.html"><button class="backbtn">Back to About Us</button></a>
+                
+            </div>
+
+        </div>
+
+        <div class="right_area">
+            <div class="about">
+                <h2 class="title2">Profile</h2>
+                <p>Competent and reliable IT student, seeking for opportunities to gain some valuable experiences. Strong communication skills, ability to perform under pressure and solve problems creatively with natural ability to solve issues in a timely manner.</p>
+            </div>
+            <div class="about">
+                <h2 class="title2">Experience</h2>
+            </div>
+            <br>
+            <br>
+            <div class="about skills">
+                <h2 class="title2">Skills</h2>
+                <div class="box">
+                    <h4>HTML</h4>
+                    <div class="percent">
+                    <div style="width: 95%;"></div>
+                    </div>
+                    </div>
+                <div class="box">
+                    <h4>Photoshop</h4>
+                    <div class="percent">
+                        <div style="width: 95%;"></div>
+                    </div>
+                    </div>
+                <div class="box">
+                     <h4>Reliable and Trustworthy</h4>
+                     <div class="percent">
+                        <div style="width: 95%;"></div>
+                     </div>
+                     </div>
+                <div class="box">
+                    <h4>Friendly with Postive Attitude</h4>
+                    <div class="percent">
+                        <div style="width: 95%;"></div>
+                    </div>
+                    </div>
+                        
+                </div>
+                <div class="about interest">
+                <h2 class="title2">Interests</h2>
+                <ul>
+                    <li>Gaming</li>
+                    <li>Music</li>
+                    <li>Editing</li>
+                    <li>Travelling</li>
+                </ul>
+
+                </div>
+            </div>
+    </div>
+</body>
+</html>

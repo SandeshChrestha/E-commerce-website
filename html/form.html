@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Camera Body, Lens, Tripods, Drones, Speedlight">
+    <meta name="author" content="Team-5: Sanskar Karki, Aashraya Shrestha, Sandesh Shrestha, Yug Tamang, Rahul Jaiswal">
+    <title>Sign In</title>
+    
+    <style>
+     /* internal css suru gareko*/
+        .formsu{       /* whole form ko box lai design gareko*/
+            height: 500px;
+            width: 400px;
+            margin: 100px auto;
+            padding: 10px;
+            box-shadow: 1px 1px 10px 3px grey;
+            background-color: white;
+        }
+        .formsu h1{	 /*is edited as required */
+            text-align: center;
+            font-size: 30px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .formsu label{
+            font-size: 20px;
+        }
+        .formsu input{
+            width: 90%;
+            height: 5%;
+            margin: 10px 0px;
+        }
+        .formsu input[type = "text"], input[type="password"]{
+            font-size: 15px;
+            padding: 5px;
+        }
+        .login{	 /*setting up the design for hover effect*/
+            font-size: 20px;
+            width: 80%;
+            padding: 5px;
+            margin: 0px 30px;
+            margin-top: 10px;
+            background-color: #1877f2;
+            color: white;
+            
+        }
+        .login:hover{	 /* hover effect is made through internal css */
+            background-color: #1653a3;
+            color: white;
+            transition: 0.2s;
+        }
+        .sublinks{
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        .sublinks .forgot, .signup{
+            margin-bottom: 10px;
+            font-size: 20px;
+            text-decoration: none;
+            color:#0c6decbc;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .signup:hover{  /* hover effect is made through internal css */
+            color:#083e85;
+            transition: 0.2s;
+
+        }
+        .forgot:hover{	 /* hover effect is made through internal css */
+            color:#063b81;
+            transition: 0.2s;
+            
+        }
+        .formsu p{
+            font-size: 17px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            margin-top: 15%;
+            line-height: 25px;
+        }
+    </style><!--End of internal css-->
+</head>
+<body style="background-color: #f5f5f5;"> <!--white background for the whole page is set-->
+    <div class="container_su"><!--cretaing a main container-->
+        <form name="signUpForm" class="formsu" onsubmit="validateform()">
+			<!--form designing begins-->
+            <h1>Sign In</h1>
+            <label>Username: </label>
+            <br>
+            <input type="email" name="username" placeholder="Username or Email" style="font-family: Georgia, 'Times New Roman', Times, serif;">
+            <br>
+            <label>Password: </label>
+            <br>
+            <input type="password" name="password" placeholder="Password" style="font-family: Georgia, 'Times New Roman', Times, serif;">
+            <br>
+            <button class="login"><a style="text-decoration: none;color: black;">Log In</a></button><!--login ko lai button haleko-->
+            <br>
+            <div class="sublinks"><!--clickable links are made-->
+            <a href="#" class="forgot">Forgot Password?</a>
+            <a href="#" class="signup">Don't Have An Account? Sign Up</a>
+			<a href="/index.html" style="color: black;">← Back to Home</a>
+            </div>
+            <p>&copy;TheCameraCrafter</p><!--copyright-->
+        </form>
+    </div>
+    <script type="text/javascript">
+		//internal javascript is used for popup message
+        function validateform() {
+            var username = document.forms["signUpForm"]["username"].value;
+            var password = document.forms["signUpForm"]["password"].value;
+
+            //if else use gareko so that a message pops up if the fields are empty
+
+            if(username == "" || password == "")
+            {
+                alert("Empty fields! Please fill in all the required information before moving on :)");
+            }
+            else
+            {
+                alert("You have successfully Logged In");
+            }
+        }
+
+    </script>
+
+</body>
+</html>
